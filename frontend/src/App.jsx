@@ -24,12 +24,12 @@ function App() {
         <p>JOKES : {jokes.length}</p>
 
         {
-          jokes.map((joke, index)=>{
+          jokes.map((joke, index)=>(
             <div key={jokes.id}>
-              <h3>Number:{jokes.title}</h3>
-              <p>Joke : {jokes.content}</p>
+              <h3>Number: {joke.title}</h3>
+              <p>Joke : {joke.content}</p>
             </div>
-          })
+          ))
         }
     </>
   )
